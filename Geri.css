@@ -198,6 +198,9 @@ text-decoration: none;
 				   "f f g";
 	align-content: space-between;
 	justify-content: space-between;	
+	align-items: stretch;
+	justify-items: center;
+	gap: 30px;
 }
 
 #proizvod-a {
@@ -233,6 +236,8 @@ text-decoration: none;
 	grid-template: "region";
 	align-content: stretch;
 	justify-content: stretch;
+	height: 100%;
+	width: 100%;
 }
 .proizvod img {
 	grid-area: region;
@@ -255,4 +260,49 @@ text-decoration: none;
 }
 .proizvod:hover .clas-holder {
 	opacity: 1.0;
+}
+
+#karijera h2 {
+	padding-top: 50px;
+	text-align: center;
+	color: white;
+}
+.carier-columns {
+	display: flex;
+}
+.job-list {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+.job-descriptions {
+	flex-grow: 2;
+	flex-basis: 0;
+}
+#karijera {
+	color: black;
+}
+.job-list label  {
+	display: block;
+	margin-bottom: 10px;
+	border: 1px solid #ffffff;
+	background-color: #ffffffc0;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.job-descriptions input {
+	display: none;
+}
+.job-descriptions .job-description {
+	display: none;
+}
+.job-descriptions input:checked+.job-description {
+	display: block;
+}
+.job-description {
+	margin-left: l0px;
+	border: 1px solid #ffffff;
+	background-color: #ffffffc0;
+	padding: 10px;
+	font-size: 20px;
 }
