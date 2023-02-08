@@ -1,10 +1,16 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
+	font-family: calibry, sans serif;
 }
 
 .header{
 	border-bottom: 2px solid #dc0101;
+	background-color: #fefefe;
 }
 
 .page{
@@ -99,9 +105,6 @@ text-decoration: none;
 	background-attachment: fixed;
 }
 
-.align-center {
-	text-align: center;
-}
 
 .tehnologije {
 	display: flex;
@@ -198,6 +201,9 @@ text-decoration: none;
 				   "f f g";
 	align-content: space-between;
 	justify-content: space-between;	
+	align-items: stretch;
+	justify-items: center;
+	gap: 30px;
 }
 
 #proizvod-a {
@@ -233,6 +239,8 @@ text-decoration: none;
 	grid-template: "region";
 	align-content: stretch;
 	justify-content: stretch;
+	height: 100%;
+	width: 100%;
 }
 .proizvod img {
 	grid-area: region;
@@ -255,4 +263,110 @@ text-decoration: none;
 }
 .proizvod:hover .clas-holder {
 	opacity: 1.0;
+}
+
+#karijera h2 {
+	padding-top: 50px;
+	text-align: center;
+	color: white;
+}
+.carier-columns {
+	display: flex;
+}
+.job-list {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding-right: 10px;
+}
+.job-descriptions {
+	flex-grow: 2;
+	flex-basis: 0;
+}
+#karijera {
+	color: black;
+}
+.job-list label  {
+	display: block;
+	margin-bottom: 10px;
+	border: 1px solid #ffffff;
+	background-color: #ffffffc0;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.job-descriptions input {
+	display: none;
+}
+.job-descriptions .job-description {
+	display: none;
+}
+.job-descriptions input:checked+.job-description {
+	display: block;
+}
+.job-description {
+	margin-left: l0px;
+	border: 1px solid #ffffff;
+	background-color: #ffffffc0;
+	padding: 10px;
+	font-size: 20px;
+}
+#kontakt h2 {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.kontakt-region {
+	display: grid;
+	grid-template: "adrese mapa"
+					"mejlovi mapa";
+	grid-template-columns: 300px 1fr;
+}
+.kontakt-adrese {
+	grid-area: adrese;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+.kontakt-mejlovi {
+	grid-area: mejlovi;
+	font-size: 14px;
+}
+.kontakt-mejlovi a {
+	text-decoration: none;
+	color: #dc0101;
+}
+.kontakt-mejlovi a:hover {
+	text-decoration: underline;
+}
+.kontakt-mapa {
+	grid-area: mapa;
+}
+.footer {
+	border-top: 3px solid #dc0101;
+	background-color: #fefefe;
+	font-size: 13px;
+}
+.footer > .column {
+	display: flex;
+}
+.footer .footer-column {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.red-link {
+	text-decoration: none;
+	color: #dc0101;
+}
+.red-link:hover {
+	text-decoration: underline;
 }
