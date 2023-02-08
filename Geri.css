@@ -1,10 +1,16 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
+	font-family: calibry, sans serif;
 }
 
 .header{
 	border-bottom: 2px solid #dc0101;
+	background-color: #fefefe;
 }
 
 .page{
@@ -99,9 +105,6 @@ text-decoration: none;
 	background-attachment: fixed;
 }
 
-.align-center {
-	text-align: center;
-}
 
 .tehnologije {
 	display: flex;
@@ -273,6 +276,7 @@ text-decoration: none;
 .job-list {
 	flex-grow: 1;
 	flex-basis: 0;
+	padding-right: 10px;
 }
 .job-descriptions {
 	flex-grow: 2;
@@ -305,4 +309,64 @@ text-decoration: none;
 	background-color: #ffffffc0;
 	padding: 10px;
 	font-size: 20px;
+}
+#kontakt h2 {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.kontakt-region {
+	display: grid;
+	grid-template: "adrese mapa"
+					"mejlovi mapa";
+	grid-template-columns: 300px 1fr;
+}
+.kontakt-adrese {
+	grid-area: adrese;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+.kontakt-mejlovi {
+	grid-area: mejlovi;
+	font-size: 14px;
+}
+.kontakt-mejlovi a {
+	text-decoration: none;
+	color: #dc0101;
+}
+.kontakt-mejlovi a:hover {
+	text-decoration: underline;
+}
+.kontakt-mapa {
+	grid-area: mapa;
+}
+.footer {
+	border-top: 3px solid #dc0101;
+	background-color: #fefefe;
+	font-size: 13px;
+}
+.footer > .column {
+	display: flex;
+}
+.footer .footer-column {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.red-link {
+	text-decoration: none;
+	color: #dc0101;
+}
+.red-link:hover {
+	text-decoration: underline;
 }
